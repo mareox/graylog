@@ -1,0 +1,46 @@
+# Environment files with secrets
+.env
+*.env
+!.env.example
+
+# Local development overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Graylog configuration files that may contain secrets
+config/graylog/graylog.conf
+
+# Data directories (handled by Docker volumes)
+data/
+mongo_data/
+log_data/
+graylog_data/
+
+# Backup files
+*.bak
+*.backup
+*.sql
+*.dump
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# SSH keys
+*.pem
+*.key
+id_rsa*
+*.ppk
